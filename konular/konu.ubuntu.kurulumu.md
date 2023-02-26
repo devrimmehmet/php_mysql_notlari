@@ -46,6 +46,7 @@ sudo mysql_secure_installation
 
 sudo mysql -u root -p
     create user 'dbadmin'@'localhost' identified by 'dbadmin';
+    SET PASSWORD FOR 'dbadmin'@'localhost' = PASSWORD("dbadmin");
     flush privileges;
     exit;
 
